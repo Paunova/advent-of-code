@@ -3,7 +3,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <h1>Simona's Advent of Code</h1>
+      <h1>Advent of Code Playground</h1>
     </>
   )
 }
