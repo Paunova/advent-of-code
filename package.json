@@ -11,7 +11,8 @@
     "server": "tsx watch server/src/index.ts",
     "build:server": "tsc -p tsconfig.server.json",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "api:run:local": "cd bruno && bru run"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -27,6 +28,7 @@
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
     "@types/supertest": "^6.0.3",
+    "@usebruno/cli": "^2.14.1",
     "@vitejs/plugin-react": "^5.0.4",
     "eslint": "^9.36.0",
     "eslint-plugin-react-hooks": "^5.2.0",

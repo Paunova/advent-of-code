@@ -1,0 +1,10 @@
+{
+  "version": "1",
+  "name": "advent-of-code-playground-api",
+  "type": "collection",
+  "files": [],
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
