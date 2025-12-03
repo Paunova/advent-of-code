@@ -1,3 +1,7 @@
+import type { SolutionParams } from "../types.js";
+
+const defaultInput = ")())())>";
+
 const MOVE = {
   UP: "(",
   DOWN: ")",
@@ -69,3 +73,27 @@ export class Building {
       : console.log(`First basement reached at ${this.basementPosition}`);
   }
 }
+
+export const getSolution = async ({ input, part }: SolutionParams) => {
+  const directions = input || defaultInput;
+
+  const building = new Building();
+  building.followDirections(directions);
+
+  if (part === 1) {
+    return {
+      currentFloor: building.getCurrentFloor(),
+    };
+  }
+
+  if (part === 2) {
+    return {
+      basementPosition: building.getBasementPosition(),
+    };
+  }
+
+  return {
+    currentFloor: building.getCurrentFloor(),
+    basementPosition: building.getBasementPosition(),
+  };
+};
